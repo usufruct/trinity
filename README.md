@@ -36,3 +36,13 @@ cd hello-vue
 npm install
 npm run dev
 ```
+
+##Angular 2
+`npm install -g angular-cli`
+
+```
+ng new hello-angular
+cd hello-angular
+ng serve
+```
+
