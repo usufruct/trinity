@@ -21,4 +21,5 @@
 .byebug_history
 
 # Switching to webpack
-http://localhost:3000
+app/assets/javascripts
+

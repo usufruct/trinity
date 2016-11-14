@@ -11,5 +11,12 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "exports-loader": "^0.6.3",
+    "expose-loader": "^0.7.1",
+    "imports-loader": "^0.6.5",
+    "lodash": "^4.17.0",
+    "webpack": "^1.13.3"
+  }
 }
