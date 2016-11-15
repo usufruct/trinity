@@ -34,6 +34,14 @@ config.module = {
       query: {
         presets: ['es2015']
       }
+    },
+    {
+      test: /\.jsx$/,
+      loader: 'babel-loader',
+      include: path.resolve(__dirname, 'app/frontend'),
+      query: {
+        presets: ['es2015', 'react']
+      }
     }
   ]
 }

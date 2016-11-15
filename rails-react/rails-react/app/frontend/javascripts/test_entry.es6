@@ -1,3 +1,5 @@
+import Hello from './hello.jsx';
+
 // Does this run? Let's find out.
 var _ = require('lodash');
 const count = 4;
