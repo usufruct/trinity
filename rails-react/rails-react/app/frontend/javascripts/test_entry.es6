@@ -4,3 +4,10 @@ const count = 4;
 _.times(count, function(i) {
   console.log('It does!', i);
 });
+
+let foo = 'bar';
+let zed = () => {
+  console.log(`hello ${foo}`);
+}
+
+zed();

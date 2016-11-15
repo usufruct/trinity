@@ -5,7 +5,7 @@ var config = module.exports = {
   // the base path which will be used to resolve entry points
   context: __dirname,
   // the main entry point for frontend JS
-  entry: './app/frontend/javascripts/test_entry.es6',
+  entry: ['babel-polyfill', './app/frontend/javascripts/test_entry.es6'],
 };
 
 config.output = {
@@ -27,9 +27,10 @@ config.resolve = {
 };
 
 config.module = {
-  loader: [
+  loaders: [
     { test: /\.es6$/,
       loader: 'babel-loader',
+      include: path.resolve(__dirname, 'app/frontend'),
       query: {
         presets: ['es2015']
       }
