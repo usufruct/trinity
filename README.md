@@ -10,6 +10,9 @@
 cd hello-react
 npm start
 ```
+###rails-react
+
+* Rails 5
 
 ## Vue
 
