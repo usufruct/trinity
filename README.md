@@ -12,7 +12,10 @@ npm start
 ```
 ###rails-react
 
+Not using any gems to get things running. Used [this article](http://clarkdave.net/2015/01/how-to-use-webpack-with-rails/) as a guide.
+
 * Rails 5
+* es6 [babel](https://github.com/babel/babel-loader)
 
 ## Vue
 

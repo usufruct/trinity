@@ -5,7 +5,7 @@ var config = module.exports = {
   // the base path which will be used to resolve entry points
   context: __dirname,
   // the main entry point for frontend JS
-  entry: './app/frontend/javascripts/test_entry.js',
+  entry: './app/frontend/javascripts/test_entry.es6',
 };
 
 config.output = {
@@ -20,8 +20,19 @@ config.output = {
 config.resolve = {
   // tell webpack which extensions to auto search when it resolves modules. With this,
   // you'll be able to do `require('./utils')` instead of `require('./utils.js')`
-  extensions: ['', '.js'],
+  extensions: ['', '.js', '.es6'],
   // by default, webpack will search in `web_modules` and `node_modules`. Because we're using
   // Bower, we want it to look in there too
   modulesDirectories: [ 'node_modules' ],
 };
+
+config.module = {
+  loader: [
+    { test: /\.es6$/,
+      loader: 'babel-loader',
+      query: {
+        presets: ['es2015']
+      }
+    }
+  ]
+}
