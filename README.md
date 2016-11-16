@@ -16,6 +16,7 @@ Not using any gems to get things running. Used [this article](http://clarkdave.n
 
 * Rails 5
 * es6 [babel](https://github.com/babel/babel-loader)
+* Not a ton of structure out of the box
 
 ## Vue
 
