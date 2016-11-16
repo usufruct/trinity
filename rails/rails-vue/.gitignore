@@ -19,3 +19,7 @@
 
 # Ignore Byebug command history file.
 .byebug_history
+
+# Stop looking at what webpack is handling
+/app/assets/javascripts
+
