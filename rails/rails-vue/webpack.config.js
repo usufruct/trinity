@@ -20,7 +20,7 @@ config.output = {
 config.resolve = {
   // tell webpack which extensions to auto search when it resolves modules. With this,
   // you'll be able to do `require('./utils')` instead of `require('./utils.js')`
-  extensions: ['', '.js', '.es6'],
+  extensions: ['', '.js', '.es6', '.vue'],
   // by default, webpack will search in `web_modules` and `node_modules`. Because we're using
   // Bower, we want it to look in there too
   modulesDirectories: [ 'node_modules' ],
@@ -38,10 +38,7 @@ config.module = {
     {
       test: /\.vue$/,
       loader: 'vue-loader',
-      include: path.resolve(__dirname, 'app/frontend'),
-      query: {
-        presets: ['vue']
-      }
+      include: path.resolve(__dirname, 'app/frontend')
     }
   ]
 }
