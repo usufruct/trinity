@@ -1,5 +1,5 @@
 import hello from './hello';
-import Vue from 'vue/dist/vue.js';
+import Vue from 'vue';
 
 var _ = require('lodash');
 

@@ -18,6 +18,10 @@ config.output = {
 };
 
 config.resolve = {
+  // Use standalone build, see: https://vuejs.org/v2/guide/installation.html#Standalone-vs-Runtime-only-Build
+  alias: {
+    'vue$': 'vue/dist/vue.js'
+  },
   // tell webpack which extensions to auto search when it resolves modules. With this,
   // you'll be able to do `require('./utils')` instead of `require('./utils.js')`
   extensions: ['', '.js', '.es6', '.vue'],
@@ -25,6 +29,9 @@ config.resolve = {
   // Bower, we want it to look in there too
   modulesDirectories: [ 'node_modules' ],
 };
+
+resolve: {
+}
 
 config.module = {
   loaders: [
